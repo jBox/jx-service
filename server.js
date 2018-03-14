@@ -3,7 +3,7 @@
 /**
  * Module dependencies.
  */
-
+const configuration = require("./configuration");
 const app = require("./app");
 const http = require("http");
 
@@ -11,7 +11,7 @@ const http = require("http");
  * Get port from environment and store in Express.
  */
 
-const port = normalizePort(process.env.JX_SERVICE_PORT || "18078");
+const port = normalizePort(configuration.env.port);
 app.set("port", port);
 
 /**

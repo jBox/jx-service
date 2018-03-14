@@ -2,11 +2,11 @@ const Path = require("path");
 const fs = require("fs-extra");
 const express = require("express");
 const bodyParser = require("body-parser");
-const jwt = require("express-jwt");
+const cv = require("config-vars");
 const service = require("./lib");
 const Logger = require("./Logger");
 
-const ROOT = process.env.JX_SERVICE_SHARE_FOLDER;
+const ROOT = cv.env.shareFolder;
 const LOGS = Path.resolve(ROOT, "./logs");
 
 //init Logger
@@ -17,7 +17,6 @@ const app = express();
 // common settings
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
-// app.use(jwt({ secret, credentialsRequired: false }));
 
 // routes
 app.use("/", service({
