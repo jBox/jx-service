@@ -19,7 +19,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 
 // routes
-app.use("/", service({
+app.use(service({
     root: ROOT,
     logger: new Logger()
 }));
