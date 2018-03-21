@@ -10,5 +10,15 @@ module.exports = cv.setup((getenv) => ({
         appid: getenv("JX_WX_APP_ID"),
         secret: getenv("JX_WX_APP_SECRET"),
         apiHost: getenv("WX_API_HOST")
+    },
+    aliyun: {
+        accessKey: getenv("ALI_ACC_ID"),
+        accessSecret: getenv("ALI_ACC_SEC"),
+        sms: {
+            signName: getenv("ALI_SMS_SIGN"),
+            loginTemplateCode: getenv("ALI_SMS_LOGIN_CODE"),
+            registerTemplateCode: getenv("ALI_SMS_REG_CODE"),
+            noticeTemplateCode: getenv("ALI_SMS_NOTICE_CODE")
+        }
     }
 }));

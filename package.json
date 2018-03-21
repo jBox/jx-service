@@ -12,6 +12,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@alicloud/sms-sdk": "^1.0.8",
     "body-parser": "^1.18.2",
     "config-vars": "^1.0.1",
     "content-type": "^1.0.4",
