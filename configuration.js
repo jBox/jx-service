@@ -18,7 +18,12 @@ module.exports = cv.setup((getenv) => ({
             signName: getenv("ALI_SMS_SIGN"),
             loginTemplateCode: getenv("ALI_SMS_LOGIN_CODE"),
             registerTemplateCode: getenv("ALI_SMS_REG_CODE"),
-            noticeTemplateCode: getenv("ALI_SMS_NOTICE_CODE")
+            registerSuccessTemplate: getenv("ALI_SMS_REGISTER_SUCCESS_TEMPLATE"),
+            registerFailureTemplate: getenv("ALI_SMS_REGISTER_FAILURE_TEMPLATE"),
+            orderScheduledTemplate: getenv("ALI_SMS_ORDER_SCHEDULED_TEMPLATE"),
+            orderCancelledTemplate: getenv("ALI_SMS_ORDER_CANCELLED_TEMPLATE"),
+            orderChangedTemplate: getenv("ALI_SMS_ORDER_CHANGED_TEMPLATE"),
+            orderAcceptedTemplate: getenv("ALI_SMS_ORDER_ACCEPTED_TEMPLATE")
         }
     }
 }));
