@@ -5,8 +5,8 @@
   "main": "server.js",
   "scripts": {
     "start": "nodemon --watch ./lib server",
-    "startup": "forever start server",
-    "shutdown": "forever stop server",
+    "startup": "forever start server.js",
+    "shutdown": "forever stop server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
