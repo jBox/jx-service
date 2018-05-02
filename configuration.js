@@ -25,6 +25,7 @@ module.exports = cv.setup((getenv) => ({
             orderChangedTemplate: getenv("ALI_SMS_ORDER_CHANGED_TEMPLATE"),
             orderAcceptedTemplate: getenv("ALI_SMS_ORDER_ACCEPTED_TEMPLATE"),
             orderCreatedTemplate: getenv("ALI_SMS_ORDER_CREATED_TEMPLATE"),
+            orderCompletedTemplate: getenv("ALI_SMS_ORDER_COMPLETED_TEMPLATE"),
             driverScheduledTemplate: getenv("ALI_SMS_DRIVER_SCHEDULED_TEMPLATE"),
             driverScheduleCancelledTemplate: getenv("ALI_SMS_DRIVER_SCHEDULE_CANCELLED_TEMPLATE")
         }
